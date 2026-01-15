@@ -13,9 +13,9 @@
       "element": "wind"
     },
     {
-      "id": 3,
-      "name": "Морской герой",
-      "description": "Как аквамен, но не из DC",
+      "id": "c78a49c9-7817-47e9-abc1-2f6c6197b56f",
+      "name": "Первый герой",
+      "description": "Первый герой в рейтинге!",
       "element": "fire"
     }
   ],
