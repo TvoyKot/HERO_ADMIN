@@ -17,6 +17,12 @@
       "name": "Первый герой",
       "description": "Первый герой в рейтинге!",
       "element": "fire"
+    },
+    {
+      "id": "685f6cb6-d7f0-4dde-8b15-fa404e2da903",
+      "name": "dsgsgsgs",
+      "description": "dgsdgsg",
+      "element": "earth"
     }
   ],
   "filters": [

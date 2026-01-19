@@ -3,7 +3,8 @@ import { useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createSelector } from "reselect";
 
-import { fetchHeroes, heroDeletedError, heroDeleted } from "../../actions";
+import { fetchHeroes } from "../../actions";
+import { heroDeleted } from "./heroesSlice";
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from "../spinner/Spinner";
 
@@ -35,7 +36,7 @@ const HeroesList = () => {
     (id) => {
       request(`http://localhost:3001/heroes/${id}`, "DELETE")
         .then(() => dispatch(heroDeleted(id)))
-        .catch((error) => dispatch(heroDeletedError(error)));
+        .catch((error) => dispatch(console.log("Ошибка!"(error))));
     },
     [request]
   );

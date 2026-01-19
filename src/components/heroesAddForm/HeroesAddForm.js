@@ -3,8 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHttp } from "../../hooks/http.hook";
 import { v4 as uuidv4 } from "uuid";
 
-import { heroCreated } from "../../actions";
-
+import { heroCreated } from "../heroesList/heroesSlice";
+import {
+  filtersFetching,
+  filtersFetched,
+  filtersFetchingError,
+  filtersLoadingStatus,
+} from "../heroesFilters/filtersSlice";
 const HeroesAddForm = () => {
   const dispatch = useDispatch();
   const { request } = useHttp();
